@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_simplejwt',
     'tareas',
+    'usuarios',
 ]
 
 MIDDLEWARE = [
@@ -127,7 +128,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_simple.authentication.JWTAutthentication',
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
         ),
     
 }
